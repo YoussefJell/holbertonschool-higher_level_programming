@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 for i in range(90, 64, -1):
-    letter = chr(i)
     if i % 2 == 0:
-        letter = letter.lower()
-    print(f"{letter}", end='')
+        i += 32
+    print(f"{chr(i)}", end='')
