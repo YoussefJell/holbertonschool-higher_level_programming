@@ -21,6 +21,12 @@ listint_t *insert_node(listint_t **head, int number)
 		return (*head);
 	}
 
+	if (number < (*head)->n)
+	{
+		addNodeBegin(head, number);
+		return (*head);
+	}
+
 	newNode = malloc(sizeof(listint_t));
 	if (newNode == NULL)
 		return (NULL);
@@ -37,4 +43,25 @@ listint_t *insert_node(listint_t **head, int number)
 	ptr->next = newNode;
 
 	return (newNode);
+}
+/**
+ * addNodeBegin - adding node to beginning
+ * @head: head of node
+ * @n: data of node
+ * Return: address of new element or null
+ */
+listint_t *addNodeBegin(listint_t **head, const int n)
+{
+	listint_t *tmp;
+
+	tmp = malloc(sizeof(listint_t));
+	if (tmp == NULL)
+		return (NULL);
+	tmp->n = n;
+	tmp->next = NULL;
+
+	tmp->next = *head;
+	*head = tmp;
+
+	return (*head);
 }
