@@ -40,13 +40,13 @@ int is_palindrome(listint_t **head)
  */
 size_t list_len(const listint_t *head)
 {
-	int lenght = 0;
+	int len = 0;
 
 	while (head != NULL)
 	{
-		++lenght;
+		++len;
 		head = head->next;
 	}
 
-	return (lenght * 2);
+	return (len * 2);
 }
