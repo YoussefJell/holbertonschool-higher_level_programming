@@ -10,9 +10,10 @@ int is_palindrome(listint_t **head)
 	listint_t *mid, *beforeSlow, *split;
 	int res;
 
+	if (head == NULL)
+		return (0);
 	if (*head == NULL)
 		return (1);
-
 	while (fast && fast->next)
 	{
 		beforeSlow = slow;
