@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-from imp import new_module
-
-
 def complex_delete(a_dictionary, value):
     new_list = []
     for a_key, a_value in a_dictionary.items():
