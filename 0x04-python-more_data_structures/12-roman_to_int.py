@@ -6,7 +6,8 @@ def roman_to_int(roman_string):
                'L': 50, 'C': 100, 'D': 500, 'M': 1000}
     int = 0
     for i in range(len(roman_string)):
-        if i + 1 != len(roman_string) and rom_val[roman_string[i]] < rom_val[roman_string[i + 1]]:
+        if i + 1 != len(roman_string) and rom_val[roman_string[i]] <\
+                rom_val[roman_string[i + 1]]:
             int -= rom_val[roman_string[i]]
         else:
             int += rom_val[roman_string[i]]
