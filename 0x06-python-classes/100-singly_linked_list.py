@@ -47,6 +47,18 @@ class SinglyLinkedList:
     class for SLL which includes sorted_insert() method and the print() method
     """
 
+    def __str__(self):
+        my_str = ""
+        current = self.__head
+
+        while current:
+            my_str += str(current.data)
+            if current.__next_node is not None:
+                my_str += "\n"
+            current = current.__next_node
+
+        return my_str
+
     def __init__(self):
         """__init__ method
         initializes head of SLL with none
@@ -71,12 +83,3 @@ class SinglyLinkedList:
                 current = current.__next_node
             newNode.__next_node = current.__next_node
             current.__next_node = newNode
-
-    def printSLL(self):
-        """printSLL method
-                prints the list
-                """
-        temp = self.__head
-        while(temp):
-            print(temp.data)
-            temp = temp.__next_node
