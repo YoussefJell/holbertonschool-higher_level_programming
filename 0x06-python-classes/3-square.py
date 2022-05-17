@@ -8,6 +8,10 @@ and has private instance size
 
 
 class Square:
+    """Square Class
+    This square has a size and area
+    """
+
     def __init__(self, size=0):
         """__init__
         initializing square
