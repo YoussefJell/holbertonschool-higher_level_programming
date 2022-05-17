@@ -10,6 +10,9 @@ class Node:
     """
 
     def __init__(self, data, next_node=None):
+        """__init__ method
+        initializes node with data and next node
+        """
         self.__data = data
         self.__next_node = next_node
 
