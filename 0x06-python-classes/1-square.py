@@ -9,4 +9,7 @@ and has private instance size
 
 class Square:
     def __init__(self, size):
+        """__init__
+        initializing square
+        """
         self.__size = size

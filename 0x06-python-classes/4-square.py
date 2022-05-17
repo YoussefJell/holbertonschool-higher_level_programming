@@ -9,9 +9,15 @@ and has private instance size
 
 class Square:
     def __init__(self, size=0):
+        """__init__
+        initializing square
+        """
         self.__size = size
 
     def area(self):
+        """area
+        returns area of square
+        """
         return self.__size * self.__size
 
     @property
