@@ -45,19 +45,19 @@ class Square:
         prints the square
         """
         k = 0
-        if self.__size > 0:
-            for i in range(self.__position[1]):
-                print()
-            for i in range(self.__size):
-                for j in range(self.__size):
-                    while k < self.__position[0]:
-                        print(' ', end='')
-                        k += 1
-                    print('#', end='')
-                k = 0
-                print()
-        else:
-            print(end='\n')
+        if self.__size == 0:
+            print()
+            return None
+        for i in range(self.__position[1]):
+            print()
+        for i in range(self.__size):
+            for j in range(self.__size):
+                while k < self.__position[0]:
+                    print(' ', end='')
+                    k += 1
+                print('#', end='')
+            k = 0
+            print()
 
     @property
     def size(self):
