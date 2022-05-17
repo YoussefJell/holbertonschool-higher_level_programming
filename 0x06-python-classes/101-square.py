@@ -104,12 +104,3 @@ class Square:
         if value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
-
-
-my_square = Square(5, (0, 0))
-print(my_square)
-
-print("--")
-
-my_square = Square(5, (4, 1))
-print(my_square)
