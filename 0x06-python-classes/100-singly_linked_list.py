@@ -48,6 +48,9 @@ class SinglyLinkedList:
     """
 
     def __str__(self):
+        """__str__ method
+        adds printability to the class
+        """
         my_str = ""
         current = self.__head
 
