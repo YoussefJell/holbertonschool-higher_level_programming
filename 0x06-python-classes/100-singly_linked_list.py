@@ -4,9 +4,6 @@ Node class for a signly linked list
 """
 
 
-from dataclasses import dataclass
-
-
 class Node:
     """Node Class
     This is the node class attributes and methods
