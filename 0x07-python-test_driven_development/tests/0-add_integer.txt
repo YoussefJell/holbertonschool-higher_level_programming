@@ -62,3 +62,18 @@ Test case #7: Testing default 'b' value with float
 	>>> add_integer(25.233)
 	123
 
+Test case #8: Testing default 'b' value with string
+
+	>>> add_integer("Testing")
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+Test case #9: Testing 'a' as int and 'b' as float
+
+	>>> add_integer(14, 16.43)
+	30
+
+Test case #10: Testing 'a' as float and 'b' as int
+
+	>>> add_integer(26.21, 24)
+	50
