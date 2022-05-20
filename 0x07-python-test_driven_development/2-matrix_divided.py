@@ -7,6 +7,12 @@ this module has the function matrix_divided
 def matrix_divided(matrix, div):
     """matrix_divided
     this will divide a matrix over the div argument
+
+        matrix must be a matrix (list of lists) of integers/floats
+        Each row of the matrix must have the same size
+        div must be a number
+        and you cannot divide by zero
+
     """
     if type(matrix) is not list:
         raise TypeError("matrix must be a matrix (list of lists)\

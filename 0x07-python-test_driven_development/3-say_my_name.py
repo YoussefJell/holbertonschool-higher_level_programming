@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""say_my_name
+"""3-say_my_name
 this module has the capability to say your name!
 """
 
@@ -9,6 +9,9 @@ def say_my_name(first_name, last_name=""):
     this function will say your name
 
     Arg: first_name, last_name
+
+        first_name must be a string
+        last_name must be a string
     """
     if type(first_name) is not str:
         raise TypeError("first_name must be a string")
