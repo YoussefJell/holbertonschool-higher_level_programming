@@ -15,12 +15,14 @@ def matrix_divided(matrix, div):
 
     """
     if type(matrix) is not list:
-        raise TypeError("matrix must be a matrix (list of lists)\
+        raise TypeError("matrix must be a matrix (list of lists) \
 of integers/floats")
     for elem in matrix:
         if type(elem) is not list:
-            raise TypeError("matrix must be a matrix (list of lists)\
+            raise TypeError("matrix must be a matrix (list of lists) \
 of integers/floats")
+        if len(elem) != len(matrix[0]):
+            raise TypeError("Each row of the matrix must have the same size")
 
     if type(div) not in (int, float):
         raise TypeError("div must be a number")
@@ -32,11 +34,3 @@ of integers/floats")
     for e in matrix[:]:
         new_matrix.append(list(map(lambda num: round((num / div), 2), e)))
     return new_matrix
-
-
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6, 7]
-]
-print(matrix_divided(matrix, 4))
-print(matrix)
