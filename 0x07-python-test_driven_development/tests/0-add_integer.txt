@@ -1,0 +1,64 @@
+====================
+-add_integer module-
+====================
+
+-Import=
+========
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+
+-Function Description-
+======================
+Write a function that adds 2 integers.
+
+
+-Operation-
+===========
+‘a’ and ‘b’ must be integers or floats, otherwise raise a TypeError exception
+with the message 'a must be an integer' or 'b must be an integer'.
+
+-Tests-
+=======
+
+Test case #0: Testing two negative ints
+
+	>>> add_integer(-1, -1)
+	-2
+
+Test case #1: Testing two negative floats
+
+	>>> add_integer(-11.6, -10.5)
+	-21
+
+Test case #2: Testing two positive ints
+
+	>>> add_integer(31, 29)
+	60
+
+Test case #3: Testing two positive floats
+
+	>>> add_integer(15.55, 13.39)
+	28
+
+Test case #4: Testing variable 'a' as a string
+
+	>>> add_integer("Hello", 81)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+Test case #5: Testing variable 'b' as a string
+
+	>>> add_integer(69, "Hi im a string")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+Test case #6: Testing default 'b' value with int
+
+	>>> add_integer(12)
+	110
+
+Test case #7: Testing default 'b' value with float
+
+	>>> add_integer(25.233)
+	123
+
