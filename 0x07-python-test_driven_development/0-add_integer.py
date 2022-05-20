@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """0-add_integer Module
-This module is for adding the variable 'a' and 'b' together\
+
+This module is for adding the variable 'a' and 'b' together
+
 """
 
 
