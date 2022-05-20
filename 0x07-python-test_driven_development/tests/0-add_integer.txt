@@ -77,3 +77,8 @@ Test case #10: Testing 'a' as float and 'b' as int
 
 	>>> add_integer(26.21, 24)
 	50
+
+Test case #11: Testing return value
+
+	>>> type(add_integer(5, 5))
+	<class 'int'>
