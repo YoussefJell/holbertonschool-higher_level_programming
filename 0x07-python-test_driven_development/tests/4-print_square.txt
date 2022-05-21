@@ -1,0 +1,59 @@
+====================
+-matrix_divided module-
+====================
+
+-Import=
+========
+    >>> print_square = __import__('4-print_square').print_square
+
+
+-Function Description-
+======================
+Write a function that prints a square with the character #.
+
+
+-Operation-
+===========
+• size must be an integer
+
+• size must be >= 0
+
+-Tests-
+=======
+
+-Correct Cases-
+===============
+
+Test case #0: Trying normal square usage
+
+	>>> print_square(4)
+	####
+	####
+	####
+	####
+
+Test case #1: Trying normal square usage
+
+	>>> print_square(1)
+	#
+
+-Error Cases-
+=============
+
+Test case #E0: Trying negative size
+
+	>>> print_square(-5)
+	Traceback (most recent call last):
+	ValueError: size must be >= 0
+
+Test case #E1: Trying bad type
+
+	>>> print_square("Test1")
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+Test case #E2: Trying bad type
+
+	>>> print_square(True)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
