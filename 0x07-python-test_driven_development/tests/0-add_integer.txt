@@ -20,6 +20,9 @@ with the message 'a must be an integer' or 'b must be an integer'.
 -Tests-
 =======
 
+-Correct Cases-
+===============
+
 Test case #0: Testing two negative ints
 
 	>>> add_integer(-1, -1)
@@ -40,45 +43,56 @@ Test case #3: Testing two positive floats
 	>>> add_integer(15.55, 13.39)
 	28
 
-Test case #4: Testing variable 'a' as a string
+Test case #4: Testing default 'b' value with int
+
+	>>> add_integer(12)
+	110
+
+Test case #5: Testing default 'b' value with float
+
+	>>> add_integer(25.233)
+	123
+
+
+Test case #6: Testing 'a' as int and 'b' as float
+
+	>>> add_integer(14, 16.43)
+	30
+
+Test case #7: Testing 'a' as float and 'b' as int
+
+	>>> add_integer(26.21, 24)
+	50
+
+Test case #8: Testing return value
+
+	>>> type(add_integer(5, 5))
+	<class 'int'>
+
+
+-Error Cases-
+=============
+
+Test case #E0: Testing variable 'a' as a string
 
 	>>> add_integer("Hello", 81)
 	Traceback (most recent call last):
 	TypeError: a must be an integer
 
-Test case #5: Testing variable 'b' as a string
+Test case #E1: Testing variable 'b' as a string
 
 	>>> add_integer(69, "Hi im a string")
 	Traceback (most recent call last):
 	TypeError: b must be an integer
 
-Test case #6: Testing default 'b' value with int
-
-	>>> add_integer(12)
-	110
-
-Test case #7: Testing default 'b' value with float
-
-	>>> add_integer(25.233)
-	123
-
-Test case #8: Testing default 'b' value with string
+Test case #E2: Testing default 'b' value with string
 
 	>>> add_integer("Testing")
 	Traceback (most recent call last):
 	TypeError: a must be an integer
 
-Test case #9: Testing 'a' as int and 'b' as float
+Test case #E3: Testing float overflow in argument
 
-	>>> add_integer(14, 16.43)
-	30
-
-Test case #10: Testing 'a' as float and 'b' as int
-
-	>>> add_integer(26.21, 24)
-	50
-
-Test case #11: Testing return value
-
-	>>> type(add_integer(5, 5))
-	<class 'int'>
+	>>> add_integer(1e1000, 20)
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer

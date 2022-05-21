@@ -97,3 +97,9 @@ Test case #10: Return value of function
 
 	>>> type(matrix_divided(matrix, 3))
 	<class 'list'>
+
+Test case #11: Matrix with one row
+
+	>>> matrix = [[1, 2, 3],  ]
+	>>> matrix_divided(matrix, 3)
+	[[0.33, 0.67, 1.0]]
