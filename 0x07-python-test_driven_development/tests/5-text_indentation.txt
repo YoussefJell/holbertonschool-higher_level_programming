@@ -1,0 +1,86 @@
+====================
+-text_indentation module-
+====================
+
+-Import=
+========
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+-Function Description-
+======================
+Write a function that prints a text with 2 new lines after each of these characters: . ? and :
+
+
+-Operation-
+===========
+• Text must be a string
+
+• There should be no space at the beginning or at the end of each printed line
+
+-Tests-
+=======
+
+-Correct cases-
+===============
+
+Test case #0: Testing normal phrase
+
+	>>> text_indentation("The name's Bond: James Bond.")
+	The name's Bond:
+	<BLANKLINE>
+	James Bond.
+	<BLANKLINE>
+
+Test case #1: Testing normal phrase with spaces in the beginning and end
+
+	>>> text_indentation("         Hello. Is anybody out there? Hellooo?  ")
+	Hello.
+	<BLANKLINE>
+	Is anybody out there?
+	<BLANKLINE>
+	Hellooo?
+	<BLANKLINE>
+
+Test case #2: Testing mix of keywords and spaces
+
+	>>> text_indentation("         ?. :  ? :  .  ")
+	?
+	<BLANKLINE>
+	.
+	<BLANKLINE>
+	:
+	<BLANKLINE>
+	?
+	<BLANKLINE>
+	:
+	<BLANKLINE>
+	.
+	<BLANKLINE>
+
+Test case #3: Testing normal phrase with no punctuation
+
+	>>> text_indentation("Agent 47 is here")
+	Agent 47 is here
+
+
+-Error cases-
+=============
+
+Test case #E0: Testing wrong data type
+
+	>>> text_indentation(True)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+Test case #E1: Testing wrong data type
+
+	>>> text_indentation(1e100)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+Test case #E2: Testing wrong data type
+
+	>>> text_indentation(15)
+	Traceback (most recent call last):
+	TypeError: text must be a string
