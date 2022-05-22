@@ -103,3 +103,10 @@ Test case #11: Matrix with one row
 	>>> matrix = [[1, 2, 3],  ]
 	>>> matrix_divided(matrix, 3)
 	[[0.33, 0.67, 1.0]]
+
+Test case #12: Testing with only a list (not a matrix)
+
+	>>> matrix = [2, 3, 4, 3]
+	>>> matrix_divided(matrix, 2)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
