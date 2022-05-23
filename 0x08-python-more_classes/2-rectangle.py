@@ -50,4 +50,6 @@ class Rectangle:
         """perimeter Method
         this method will calculate the rectangle object's perimeter
         """
+        if self.__width == 0 or self.__height == 0:
+            return 0
         return 2 * (self.__height + self.__width)
