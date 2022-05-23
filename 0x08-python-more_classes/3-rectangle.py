@@ -17,6 +17,9 @@ class Rectangle:
         self.width = width
 
     def __str__(self):
+        """__str__ method
+        this method will print the rectangle on print() or str()
+        """
         my_str = ""
         for i in range(self.__height):
             for j in range(self.__width):
