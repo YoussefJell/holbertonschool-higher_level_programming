@@ -21,6 +21,8 @@ class Rectangle:
         this method will print the rectangle on print() or str()
         """
         my_str = ""
+        if self.__width == 0 or self.__height == 0:
+            return my_str
         for i in range(self.__height):
             for j in range(self.__width):
                 my_str += '#'
