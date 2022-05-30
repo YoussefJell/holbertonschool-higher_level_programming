@@ -66,3 +66,13 @@ Test case #3: Testing string case
 
     >>> print(my_list)
     ['s', 't', 'r', 'i', 'n', 'g']
+
+Test case #4: Testing declaration list
+
+    >>> my_list = MyList([1, 2, 1])
+
+    >>> my_list
+    [1, 2, 1]
+
+    >>> my_list.print_sorted()
+    [1, 1, 2]
