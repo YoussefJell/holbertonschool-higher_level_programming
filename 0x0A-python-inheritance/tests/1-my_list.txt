@@ -63,3 +63,6 @@ Test case #3: Testing string case
 
     >>> my_list.print_sorted()
     ['g', 'i', 'n', 'r', 's', 't']
+
+    >>> print(my_list)
+    ['s', 't', 'r', 'i', 'n', 'g']
