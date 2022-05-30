@@ -53,3 +53,13 @@ Test case #2: Testing negative ints only
     >>> my_list.append(-5)
     >>> my_list.print_sorted()
     [-5, -4, -3, -2, -1]
+
+Test case #3: Testing string case
+
+    >>> my_list = MyList("string")
+
+    >>> my_list
+    ['s', 't', 'r', 'i', 'n', 'g']
+
+    >>> my_list.print_sorted()
+    ['g', 'i', 'n', 'r', 's', 't']
