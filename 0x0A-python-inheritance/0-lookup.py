@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""lookup function
+"""lookup function that returns a list of available attributes
+and methods of an object aka:
 returns dir of obj"""
 
 
