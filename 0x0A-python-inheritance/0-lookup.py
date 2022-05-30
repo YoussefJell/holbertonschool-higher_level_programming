@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """lookup function
-returns dir of obj
-"""
+returns dir of obj"""
 
 
 def lookup(obj):
