@@ -40,6 +40,5 @@ class Student:
         """reload_from_json
         replaces all attributes of the Student instance
         """
-        self.first_name = json.get('first_name')
-        self.last_name = json.get('last_name')
-        self.age = json.get('age')
+        for key, value in json.items():
+            setattr(self, key, value)
