@@ -15,7 +15,7 @@ class Rectangle(Base):
         this method initializes on instance creation
         """
         super().__init__(id)
-        self.size = width
+        self.width = width
         self.height = height
         self.x = x
         self.y = y
@@ -28,11 +28,11 @@ class Rectangle(Base):
  {self.__width}/{self.__height}"
 
     @property
-    def size(self):
+    def width(self):
         return self.__width
 
-    @size.setter
-    def size(self, value):
+    @width.setter
+    def width(self, value):
         self.check_value_w_h(value, "width")
         self.__width = value
 
@@ -114,5 +114,5 @@ class Rectangle(Base):
         """to_dictionary Method
         this method will return the dictionary representation of a Rectangle
         """
-        return {"id": self.id, "width": self.size, "height":
+        return {"id": self.id, "width": self.width, "height":
                 self.height, "x": self.x, "y": self.y}
