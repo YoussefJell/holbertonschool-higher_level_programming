@@ -10,5 +10,5 @@ exports.esrever = function (list) {
     i = i + 1;
     j = j - 1;
   }
-  return list
+  return list;
 };
