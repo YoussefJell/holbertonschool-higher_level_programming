@@ -9,7 +9,7 @@ if __name__ == '__main__':
 
     cursor = db.cursor()
     cursor.execute(
-        f"SELECT * FROM states WHERE name = '{argv[4]}' ORDER BY id ASC")
+        "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(argv[4]))
     query_rows = cursor.fetchall()
     for row in query_rows:
         print(row)
