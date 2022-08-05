@@ -15,7 +15,7 @@ if __name__ == '__main__':
  ORDER BY cities.id ASC", {'state_name': state_name})
     query_rows = cursor.fetchall()
 
-print(", ".join(row[0] for row in query_rows))
+    print(", ".join(row[0] for row in query_rows))
 
-cursor.close()
-db.close()
+    cursor.close()
+    db.close()
