@@ -10,7 +10,7 @@ if __name__ == "__main__":
     else:
         myobj = {'q': ''}
 
-    url = 'http://eebab4f62ae4.6ef63e22.hbtn-cod.io:5000/search_user'
+    url = 'http://0.0.0.0:5000/search_user'
     try:
         r = requests.post(url, myobj).json()
         if r.get('id') and r.get('name'):
