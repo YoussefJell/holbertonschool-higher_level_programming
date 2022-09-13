@@ -5,7 +5,7 @@ let count = 0;
 axios.get(reqUrl)
   .then(function (response) {
     for (let i = 0; i < response.data.count; i++) {
-      if (response.data.results[i].characters.includes('18')) {
+      if (String(response.data.results[i].characters).includes('18')) {
         count += 1;
       }
     }
